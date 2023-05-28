@@ -746,9 +746,12 @@ a {
     padding-right: calc(50% - 992px / 2);
 }
 
-.scroll-up__img {
-    width: 52px;
+.scroll-up__img,
+.scroll-up__link {
+    width: 36px;
 }
+
+
 
 .title {
     max-width: 523px;
@@ -1107,7 +1110,7 @@ a {
 }
 
 .about-employee {
-    align-items: center;
+    text-align: center;
 }
 
 .gallery-team {
@@ -1138,6 +1141,10 @@ a {
     width: 359px;
 }
 
+.subscription-form__input-field {
+    padding-left: 26px;
+}
+
 .subscription-form__input-field,
 .button__subscription-form {
     width: 359px;
@@ -1152,6 +1159,7 @@ a {
 
 .input__get-in-touch {
     width: 359px;
+    padding-left: 26px;
 }
 
 .input__get-in-touch_message {
