@@ -1,7 +1,9 @@
+
 * {
     margin: 0;
     padding: 0;
 }
+
 
 body {
     font-family: 'Open Sans', sans-serif ;
@@ -27,7 +29,7 @@ a {
     display: block;
 }
 
- .scroll-up__img {
+.scroll-up__img {
     width: 66px; 
 }
 
@@ -94,7 +96,7 @@ a {
 }
 
 .title {
-    width: 618px;
+    max-width: 618px;
     font-weight: 800;
     font-size: 60px;
     font-style: italic;
@@ -119,7 +121,7 @@ a {
     display: flex;
     align-items: center;
     color: #000000;
-    width: 544px;
+    max-width: 544px;
     margin-top: 36px;
 }
 
@@ -155,16 +157,18 @@ a {
 
 /*section about*/
 
-.service {
+.about {
     padding-top: 107px;
-    padding-bottom: 104px;
+}
+
+.service {
     display: flex;
     justify-content: space-between;    
     border-bottom: 5px solid #ECECEC;
 }
 
 .heading {
-    width: 523px;
+    width: 100;
     font-weight: 700;
     font-size: 42.1902px;
     line-height: 55px;
@@ -177,7 +181,6 @@ a {
 .text_service {
     width: 539px;
     margin-top: 50px;
-    max-height: 98px;
 }
 
 .button_service {
@@ -255,6 +258,14 @@ a {
     transform: scale(1.5);
 }
 
+.service_img_4 {
+    transition: all 0.5s ease-in-out;
+}
+
+.service_item:hover .service_img_4 {
+    transform: translate(250px,0);
+}
+
 /* section products */
 
 .products {
@@ -321,6 +332,23 @@ a {
 
 .products__item {
     display: flex;
+    width: 301px;
+    cursor: pointer;
+}
+
+.products-item__img {
+    transition: transform 0.5s
+}
+
+.products__item:hover .products-item__img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.products-item__img {
+    width: 301px;
+    height: 293px;
+    object-fit: cover;
 }
 
 /* section-meet-our-team */
@@ -329,7 +357,7 @@ a {
     padding-left: calc(50% - 1213px / 2);
     padding-right: calc(50% - 1213px / 2);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 115px;
+    padding-bottom: 115px;
 }
 
 .meet-our-team-text_margin {
@@ -355,6 +383,9 @@ a {
 
 .employee-active__photo {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 310px;
+    height: 458px;
+    object-fit: cover;
 }
 
 .about-employee__title {
@@ -368,7 +399,7 @@ a {
 }
 
 .about-employee__text {
-    width: 635px;
+    width: 100%;
     margin-top: 29px;
 }
 
@@ -409,6 +440,8 @@ a {
     height: 216px;
     align-items: end;
     display: flex;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .employee:hover .employee__name {
@@ -430,12 +463,17 @@ a {
     height: 36.84px;
     text-transform: uppercase;
     justify-content: center;
-    top: 179px;
+    bottom: 0;
     left: -100%;
     transition: left 0.3s;
 }
 
-.employee__pop-up {
+.alexander-smith,
+.adriana-addington {
+    display: none;
+}
+
+.sokina-jue {
     display: none;
 }
 
@@ -449,19 +487,18 @@ a {
 
 /* section-subscription-form */
 
-.subscription__form {
-    padding-left: calc(50% - 1129px / 2);
-    padding-right: calc(50% - 1129px / 2);
-}
-
 .section-subscription-form {
     background-color: rgb(0, 0, 0, 0.8);
-    margin-bottom: 104px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     padding-bottom: 141px;
+}
+
+.subscription__form {
+    padding-left: calc(50% - 1129px / 2);
+    padding-right: calc(50% - 1129px / 2);
 }
 
 .subscription-form_heading {
@@ -549,6 +586,8 @@ a {
     padding-bottom: 107px;
     padding-left: calc(50% - 1255px / 2);
     padding-right: calc(50% - 1255px / 2);
+    padding-top: 104px;
+    
 }
 
 .get-in-touch_text {
@@ -569,7 +608,7 @@ a {
 }
 
 .form-get-in-touch {
-    max-width: 734px;
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -609,7 +648,8 @@ a {
 }
 
 .button__get-in-touch {
-    width: 734px;
+    max-width: 100%;
+    width: 100%;
     height: 75px;
     background: #FF3B3B;
     font-style: normal;
@@ -638,7 +678,7 @@ a {
     padding-left: 79px;
     padding-top: 134px;
     box-sizing: border-box;
-    padding-right: 107px;
+    padding-right: 82px;
     margin-left: 106px;
 }   
 
@@ -738,10 +778,76 @@ a {
 
 @media (max-width: 1439px) {
 
-    .products__item {   
-        height: 210px;
+    .section,
+.section-meet-our-team, 
+.footer__content,
+.section-get-in-touch,
+.service,
+.subscription__form {
+    padding-left: calc(50% - 992px / 2);
+    padding-right: calc(50% - 992px / 2);
+}
+     .top_video {
+        width: 45%;
+     }
+
+     .title {
+        font-size: 52px;
+     } 
+
+     .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-   
+
+    .info_service {
+        width: 100%;
+    }
+
+    .text_item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .text_service {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .products__items {
+        padding-left: calc(50% - 1024px / 2);
+        padding-right: calc(50% - 1024px / 2);
+        justify-content: center;
+    }
+
+    .products__item {   
+        height: 100%;
+        width: 100%;
+    }
+
+    .products-item__img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .gallery-team {
+        padding-left: calc(50% - 992px / 2);
+        padding-right: calc(50% - 992px / 2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscription-form_heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text_subscription-form {
+        width: 100%;
+    }
+
     .content__get {
         display: flex;
         flex-direction: column;
@@ -763,24 +869,33 @@ a {
         gap: 20px;
     }
 
+    .get-in-touch_text {
+        width: 100%;
+        max-width: 1024px;
+    }
+
 
     .input__get-in-touch {
         width: 48%;
+        height: 101px;
     }
 
     .input__get-in-touch_message {
         width: 100%;
         margin-top: 0;
+        height: 275px;
     }
 
     .button__get-in-touch {
        margin-top: 0px;
+       width: 100%;
+       height: 101px;
     }
 
     .contact-box {
         margin-left: 0px;
         margin-right: 0;
-        max-width: 734px;
+        max-width: 1024px;
         width: 100%;
         padding: 100px 0px;
     }
@@ -793,6 +908,11 @@ a {
         width: 100%;
     }
 
+    .text__contact-info {
+        width: 100%;
+        
+    }
+
 }
 
 
@@ -801,9 +921,10 @@ a {
 .section,
 .section-meet-our-team, 
 .footer__content,
-.section-get-in-touch {
-    padding-left: calc(50% - 992px / 2);
-    padding-right: calc(50% - 992px / 2);
+.section-get-in-touch,
+.subscription__form {
+    padding-left: calc(50% - 736px / 2);
+    padding-right: calc(50% - 736px / 2);
 }
 
 .scroll-up__img,
@@ -811,56 +932,130 @@ a {
     width: 36px;
 }
 
+.top_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
 .title {
     max-width: 523px;
     font-size: 48px;
     line-height: 58px;
+    align-items: center;
 }
 
 .text {
-    max-width: 448px;
+    max-width: 100%;
 }
 
 .top_content {
     margin-top: 84px;
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+}
+
+.top-content_text {
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
 }
 
 .top_video {
-    max-width: 436px;
+    max-width: 100%;
+    width: 100%;
 }
 
+.service {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content_service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .service_heading {
     margin-top: 11px;
 }
 
 .heading {
-    width: 474px;
+    width: 100%;
     line-height: 50px;
-    font-size: 38px;
+    text-align: center;
 }
 
 .text_service {
-    width: 424px;
+    max-width: 100%;
+    width: 94%;
+    text-align: center;
+}
+
+.info_service{
+    width: 100%;
+    justify-items: center;
+}
+
+.service_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text_item {
-    max-width: 234px;
+    max-width: 100%;
+    width: 100%;
     margin-top: 34px;
+}
+.products,
+.section-subscription-form{
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+
+.products_text {
+    width: 100%;
+    max-width: 100%;
+}
+
+.products__links {
+    flex-wrap: wrap;
 }
 
 .products__items {
-    padding-left: calc(50% - 992px / 2);
-    padding-right: calc(50% - 992px / 2);
+    padding-left: calc(50% - 736px / 2);
+    padding-right: calc(50% - 736px / 2);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.meet-our-team__content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meet-our-team-text_margin {
+    margin-left: 0px;
+}
+
+.gallery-team {
+    padding-left: calc(50% - 736px / 2);
+    padding-right: calc(50% - 736px / 2);
+    gap: 28px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.gallery-team {
-    padding-left: calc(50% - 992px / 2);
-    padding-right: calc(50% - 992px / 2);
-    gap: 28px;
+.about-employee__title {
+    text-align: center;
 }
 
 .employee-active__photo {
@@ -869,6 +1064,7 @@ a {
 
 .links-social-networks {
     margin-top: 23px;
+    justify-content: center;
 }
 
 .all-employees {  
@@ -877,26 +1073,29 @@ a {
 }
 
 .employee {
-    width: 162px;
+    width: 100%;
 }
 
 .employee__photo {
-    height: 168px;
+    height: 100%;
+    width: 100%;
 }
 
 .employee__name {
-    top: 131px;
-    left: -125%;
-    width: 162px;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    font-size: 14px;
 }
 
 .subscription-form_heading {
-    width: 831px;
+    width: 100%;
     text-align: center;
+    margin-top: 0;
 }
 
-.text_subscription-form {
-    width: 831px;
+.subscription-form__input-field {
+    width: 50%;
 }
 
 .get-in-touch_text {
@@ -908,7 +1107,7 @@ a {
 }
 
 .input__get-in-touch_message {
-    width: 756px;
+    width: 100%;
     margin-top: 32px;
 }
 }
@@ -919,8 +1118,12 @@ a {
 .section-meet-our-team, 
 .footer__content,
 .section-get-in-touch {
-    padding-left: calc(50% - 736px / 2);
-    padding-right: calc(50% - 736px / 2);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.top {
+    padding-bottom: 74px;
 }
 
 .top_content {
@@ -935,7 +1138,7 @@ a {
 }
 
 .title {
-    width: 618px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -947,16 +1150,26 @@ a {
 .top_video {
     width: 100%;
     object-fit: cover;
-    margin-top: 76px;
+    margin-top: 0;
     max-width: 100%;
 }
 
 /* section about */
 
+.about {
+    padding-top: 64px;
+}
+
+.heading {
+    font-size: 40px;
+}
+
 .service {
     justify-content: center;
     flex-wrap: wrap;
     gap: 42px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .content_service {
@@ -976,24 +1189,25 @@ a {
 
 /* section products */
 
+.products {
+    padding-top: 74px;
+    padding-bottom: 74px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .products__links {
-    gap: 26px;
-}
-
-.subscription-form_heading {
-    width: 768px;
-}
-
-.text_subscription-form {
-    width: 768px;
+    gap: 16px;
+    margin-top: 42px;
 }
 
 .products__items {
     justify-content: space-between;
+    margin-top: 24px;
 }
 
 .products__item {
-    height: 166px;
+    height: 100%;
 }
 
 /* section-meet-our-team */
@@ -1003,17 +1217,44 @@ a {
 }
 
 .all-employees {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 48%;
+    padding-left: 16px;
+    padding-right: 16px;
+
 }
 
 /* section-subscription-form */
 
-.subscription-form__input-field {
-    width: 404px;
+.subscription__form,
+.subscription-form__input-button {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.subscription-form__input-field,
+.button__subscription-form {
+    width: 100%;
+}
+
+.section-subscription-form {
+    padding-top: 74px;
+    padding-bottom: 74px;
+}
+
+.subscription-form_heading {
+    width: 100%;
+}
+
+.text_subscription-form {
+    width: 100%;
 }
 
 /* section-get-in-touch */
+
+.section-get-in-touch {
+    padding-top: 74px;
+}
 
 .content__get {
     display: flex;
@@ -1022,7 +1263,7 @@ a {
 }
 
 .get-in-touch_heading {
-    width: 736px;
+    width: 100%;
     text-align: center;
 }
 
@@ -1030,13 +1271,22 @@ a {
     max-width: 736px;
 }
 
+.input__get-in-touch {
+    height: 75px;
+}
+
+.input__get-in-touch_message {
+    margin-top: 0;
+}
+
 .contact-form-box {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0;
 }
 
 .contact-box {
-    padding: 156px 123px;
+    padding: 76px 76px;
     margin-left: 0px;
     margin-top: 74px;
 }
@@ -1052,6 +1302,10 @@ a {
 .subscription__form {
     padding-left: calc(50% - 359px / 2);
     padding-right: calc(50% - 359px / 2);
+}
+
+.scroll-up {
+    display: none;
 }
 
 .header {
@@ -1083,7 +1337,7 @@ a {
 }
 
 .title {
-    width: 375px;
+    width: 100%;
     font-size: 34px;
     line-height: 41px;
 }
@@ -1093,18 +1347,22 @@ a {
 }
 
 .text {
-    max-width: 328px;
+    max-width: 100%;
     margin-top: 12px;
     text-align: center;
 }
 
 /* section about */
 
+.about {
+    padding-top: 0;
+}
+
 .heading {
 
     width: 100%;
     line-height: 42px;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -1114,7 +1372,7 @@ a {
 }
 
 .text_service {
-    min-width: 341px;
+    min-width: 100%;
     margin-top: 40px;
     text-align: center;
 }
@@ -1137,6 +1395,11 @@ a {
     padding-bottom: 82px;
 }
 
+.products__items {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
 .products__links {
     gap: 12px;
     flex-wrap: wrap;
@@ -1154,18 +1417,29 @@ a {
     justify-content: center;
 }
 
+.links-social-networks__link {
+    font-size: 16px;
+}
+
 .about-employee {
     text-align: center;
 }
 
+.about-employee__text {
+    width: 95%;
+}
+
 .gallery-team {
     flex-wrap: wrap;
-    flex-direction: column-reverse;
     align-items: center;
 }
 
 .all-employees {
     justify-content: center;
+}
+
+.employee-active__photo {
+    height: 342px;
 }
 
 .links-social-networks {
@@ -1176,6 +1450,7 @@ a {
 
 .section-subscription-form {
     padding-bottom: 64px;
+    padding-top: 0;
 }
 
 .subscription-form_heading {
@@ -1183,7 +1458,7 @@ a {
 }
 
 .text_subscription-form {
-    width: 359px;
+    width: 100%;
 }
 
 .subscription-form__input-field {
@@ -1192,19 +1467,21 @@ a {
 
 .subscription-form__input-field,
 .button__subscription-form {
-    width: 359px;
+    width: 100%;
     height: 62px;
 }
 
 /* section-get-in-touch */
 
 .form-get-in-touch {
-    gap: 32px;
+    gap: 14px;
 }
 
 .input__get-in-touch {
-    width: 359px;
+    width: 100%;
     padding-left: 26px;
+    height: 62px;
+
 }
 
 .input__get-in-touch_message {
@@ -1212,12 +1489,20 @@ a {
 }
 
 .button__get-in-touch {
-    width: 359px;
+    width: 100%;
     margin-top: 0px;
+    height: 62px;
+}
+
+.contact-form-box {
+    gap: 58px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .contact-box {  
     padding: 52px 21px;
+    margin-top: 0;
 }
 
 .footer {
@@ -1252,8 +1537,12 @@ a {
 .section-get-in-touch,
 .gallery-team,
 .subscription__form {
-    padding-left: calc(50% - 304px / 2);
-    padding-right: calc(50% - 304px / 2);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.top_content {
+    gap: 58px;
 }
 
 .top_info {
@@ -1261,18 +1550,18 @@ a {
 }
     
 .title {
-    width: 304px;
+    width: 100%;
 }
 
 .text {
-    max-width: 304px;
+    max-width: 100%;
     margin-top: 0;
     text-align: center;
     font-size: 14px;
 }
 
 .heading {
-    width: 304px;
+    width: 100%;
 }
 
 .heading,
@@ -1288,12 +1577,22 @@ a {
      margin-top: 10px;
 }
 
+.about {
+    padding-top: 0px;
+}
+
+.service {
+    padding-top: 54px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .about-employee__text {
-    max-width: 304px;
+    max-width: 100%;
 }
 
 .employee {
-    width: 148px;
+    width: 100%;
 }
 
 .employee-active__photo {
@@ -1303,6 +1602,14 @@ a {
 .section-subscription-form {
     padding-bottom: 44px;
     margin-bottom: 56px;
+}
+
+.section-get-in-touch {
+    padding-top: 0;
+}
+
+.section-meet-our-team {
+    padding-bottom: 64px;
 }
 
 .subscription__form {
@@ -1318,17 +1625,19 @@ a {
 
 .subscription-form__input-button {
     margin-top: 34px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .subscription-form__input-field,
 .button__subscription-form,
 .text_subscription-form {
-    width: 304px;
+    width: 100%;
 }
 
 .text_service {
     margin-top: 41px;
-    min-width: 304px;
+    min-width: 100%;
 }
 
 .products__items,
@@ -1351,7 +1660,7 @@ a {
 }
 
 .form-get-in-touch {
-    width: 304px;
+    width: 100%;
     gap: 14px;
 }
 
@@ -1364,21 +1673,21 @@ a {
 }
 
 .contact-box {
-    width: 304px;
+    width: 100%;
     padding: 52px 0px;
 }
 
 .contact-box__info {
     margin-left: 10px;
-    width: 294px;
+    width: 100%;
 }
 
 .contact__info {
-    width: 280px;
+    width: 100%;
 }
 
 .text__contact-info {
-    width: 280px;
+    width: 100%;
 }
 
 .links-social-networks {
@@ -1394,7 +1703,7 @@ a {
 }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 600px) {
     /* Стили для мобилки */
 
  /* Mobile_phone_burger_menu */
@@ -1418,16 +1727,17 @@ a {
     width: 50px;
     position: relative;
     cursor: pointer;
+    padding-left: 8px;
 }
 
 .menu_mobile {
     max-width: 100%;
     width: 100%;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgb(0, 0, 0, 0.8);
     border: none;
     position: absolute;
     z-index: 1000;
-    left: -572px;
+    left: -603px;
     top: 49px;
     transition: top 0.2s;
     display: flex;
