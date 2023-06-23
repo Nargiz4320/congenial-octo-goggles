@@ -7,72 +7,50 @@ employeeList.forEach(miniImg=> {
     });    
 });      
 
-// смена блоков employee
-const adrianaAddingtonphoto = document.querySelector('.adriana-addington__photo');
-const aboutEmployeeVar = document.querySelector('.about-employee');
-const adrianaAddington = document.querySelector('.adriana-addington');
-const alexanderSmithEl = document.querySelector('.alexander-smith');
-const sokinaJueeEle = document.querySelector('.sokina-jue');
+const markWaungBlock = document.querySelector('.mark-waungh');
+const alexanderSmithBlock = document.querySelector('.alexander-smith');
+const adrianaAddingtonBlock = document.querySelector('.adriana-addington');
+const sokinaJueBlock = document.querySelector('.sokina-jue');
+const markWaungPhoto = document.querySelector('.mark-waungh__photo');
+const alexanderSmithPhoto = document.querySelector('.alexander-smith__photo ');
+const adrianaAddingtonPhoto = document.querySelector('.adriana-addington__photo ');
+const sokinaJuePhoto = document.querySelector('.sokina-jue__photo ');
 
-adrianaAddingtonphoto.addEventListener('click', function () {
-    aboutEmployeeVar.classList.add('none')
-    adrianaAddington.classList.add('visible')
-    alexanderSmithEl.classList.remove('visible')
-    sokinaJueeEle.classList.remove('visible')
+alexanderSmithPhoto.addEventListener('click', function (e) {
+    alexanderSmithBlock.classList.add('visible')
+    adrianaAddingtonBlock.classList.remove('visible')
+    markWaungBlock.classList.add('none')
+    sokinaJueBlock.classList.remove('visible')       
 });
 
-const alexanderSmith = document.querySelector('.alexander-smith');
-const aboutEmployee = document.querySelector('.about-employee');
-const adrianaAddingtonblock = document.querySelector('.adriana-addington');
-const alexanderSmithPhoto = document.querySelector('.alexander-smith__photo');
-const sokinaJueeElem = document.querySelector('.sokina-jue');
-
-alexanderSmithPhoto.addEventListener('click', function () {
-   alexanderSmith.classList.add('visible')
-   adrianaAddingtonblock.classList.remove('visible')
-   sokinaJueeElem.classList.remove('visible')
-   aboutEmployee.classList.add('none')
+adrianaAddingtonPhoto.addEventListener('click', function (e) {
+    alexanderSmithBlock.classList.remove('visible')
+    adrianaAddingtonBlock.classList.add('visible')
+    markWaungBlock.classList.add('none')
+    sokinaJueBlock.classList.remove('visible')       
 });
 
-const alexanderSmithEmp = document.querySelector('.alexander-smith');
-const aboutEmployeeemp = document.querySelector('.about-employee');
-const adrianaAddingtonEl = document.querySelector('.adriana-addington');
-const alexanderSmithimg = document.querySelector('.alexander-smith__photo');
-const sokinaJuePhoto = document.querySelector('.sokina-jue__photo');
-const sokinaJueeEl = document.querySelector('.sokina-jue');
-
-
-sokinaJuePhoto.addEventListener('click', function () {
-    alexanderSmithEmp.classList.remove('visible')
-    adrianaAddingtonblock.classList.remove('visible')
-    aboutEmployee.classList.add('none')
-    sokinaJueeEl.classList.add('visible')   
-     
+sokinaJuePhoto.addEventListener('click', function (e) {
+    alexanderSmithBlock.classList.remove('visible')
+    adrianaAddingtonBlock.classList.remove('visible')
+    markWaungBlock.classList.add('none')
+    sokinaJueBlock.classList.add('visible')       
 });
 
-const alexanderSmithE = document.querySelector('.alexander-smith');
-const aboutEmployeeem = document.querySelector('.about-employee');
-const adrianaAddingtonE = document.querySelector('.adriana-addington');
-const alexanderSmithim = document.querySelector('.alexander-smith__photo');
-const sokinaJueem = document.querySelector('.sokina-jue__photo');
-const sokinaJueeE = document.querySelector('.sokina-jue');
-const markWaungPhoto =document.querySelector('.mark-waungh__photo');
-
-markWaungPhoto.addEventListener('click', function () {
-   aboutEmployeeem.classList.remove('none')
-   adrianaAddingtonE.classList.remove('visible')
-   alexanderSmithE.classList.remove('visible')
-   sokinaJueeE.classList.remove('visible')
-        
+markWaungPhoto.addEventListener('click', function (e) {
+    alexanderSmithBlock.classList.remove('visible')
+    adrianaAddingtonBlock.classList.remove('visible')
+    markWaungBlock.classList.remove('none')
+    sokinaJueBlock.classList.remove('visible')       
 });
 
 
 // burger
 const burgerEl = document.querySelector('.burger');
-const menu_mobileEl = document.querySelector('.menu_mobile');
+const menuMobileEl = document.querySelector('.menu');
 
     burgerEl.addEventListener('click', function (e) {
-    menu_mobileEl.classList.toggle('menu__show')
+    menuMobileEl.classList.toggle('menu__show')
 });
 
 // scroll

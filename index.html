@@ -17,36 +17,39 @@
 <body>
          
      <a id="home" href="#"></a>
-    <header class="header_mob">
+    <header class="header-mobile">
         <img class="burger" src="img/menu.png" alt="меню"> 
-        <nav> <div class="menu menu_mobile">
-        <div class="menu_list menu_list_1"><a class="menu_link menu_link_action menu_link_1" href="#home"> home</a></div>
-        <div class="menu_list menu_list_2"><a class="menu_link menu_link_2" href="#portfolio"> portfolio</a></div>
-        <div class="menu_list menu_list_3"><a class="menu_link menu_link_3" href="#about"> about us</a></div>
-        <div class="menu_list menu_list_4"><a class="menu_link menu_link_4" href="#contact"> contact</a></div>
+        <nav> 
+            <div class="menu menu-mobile">
+            <div class="menu__list menu__list_1"><a class="menu__link menu-link_action menu__link_1" href="#home"> home</a></div>
+            <div class="menu__list menu__list_2"><a class="menu__link menu__link_2" href="#portfolio"> portfolio</a></div>
+            <div class="menu__list menu__list_3"><a class="menu__link menu__link_3" href="#about"> about us</a></div>
+            <div class="menu__list menu__list_4"><a class="menu__link menu__link_4" href="#contact"> contact</a></div>
         </div></nav></header>       
+        
      <div class="scroll-up scroll-up__hide">
             <a class="scroll-up__link" href="#home">
                 <img class="scroll-up__img" src="img/right-arrow.png" alt="scroll-up">
             </a></div>  
-    <section class="section top"> 
-        <header class="header">
-            <nav>
-                <ul class="menu">
-                    <li class="menu_list"><a href="#home" class="menu_link menu_link_action">home</a></li>                    
-                    <li class="menu_list"><a href="#portfolio" class="menu_link">portfolio</a></li>
-                    <li class="menu_list"><a href="#about" class="menu_link">about us</a></li>
-                    <li class="menu_list"><a href="#contact" class="menu_link">contact</a></li>
-                </ul>
-            </nav>
-        </header> 
-        <div class="top_content">
-            <div class="top_info">
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__list"><a href="#home" class="menu__link menu-link_action">home</a></li>                    
+                <li class="menu__list"><a href="#portfolio" class="menu__link ">portfolio</a></li>
+                <li class="menu__list"><a href="#about" class="menu__link ">about us</a></li>
+                <li class="menu__list"><a href="#contact" class="menu__link ">contact</a></li>
+            </ul>
+        </nav>
+     </header> 
+    <section class="section first-section">        
+        <div class="first-content">
+            <div class="first-content__info">
         <h1 class="title">our strong  <span class="organaisation" >organaisation</span></h1>
-        <p class="text top-content_text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
+        <p class="text first-content__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
         <a class="button" href="#">Contact Us</a>
         </div>
-        <video class="top_video" controls poster="img/team.jpg" src="video/video_cat.mp4"></video>
+        <video class="first-content__video" controls poster="img/team.jpg" src="video/video_cat.mp4"></video>
     </div>
     </section>
     <a id="about" href="#"></a>
@@ -64,8 +67,8 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7112 26.6571C17.6518 26.6571 15.1618 24.1631 15.1618 21.0918C15.1618 18.0226 17.6518 15.5285 20.7112 15.5285C23.7675 15.5285 26.2551 18.0226 26.2551 21.0918C26.2551 24.1631 23.7675 26.6571 20.7112 26.6571ZM20.7112 16.9706C18.4428 16.9706 16.6 18.82 16.6 21.0918C16.6 23.3636 18.4428 25.2147 20.7112 25.2147C22.9741 25.2147 24.8168 23.3636 24.8168 21.0918C24.8168 18.82 22.9741 16.9706 20.7112 16.9706ZM18.2939 41.1888C17.9652 41.1888 17.6781 40.9627 17.5971 40.6436L16.3599 35.6809C15.3967 35.3825 14.4466 34.9767 13.5278 34.4756L9.12694 37.1254C8.84512 37.2953 8.48241 37.2485 8.24995 37.0188L4.83064 33.5882C4.59826 33.3558 4.55393 32.9932 4.72357 32.7094L7.36514 28.302C6.87451 27.39 6.48029 26.4411 6.18806 25.4637L1.21279 24.2167C0.894459 24.137 0.667419 23.8463 0.667419 23.5187V18.6747C0.667419 18.3423 0.894459 18.0534 1.21279 17.9753L6.15929 16.7368C6.46206 15.7606 6.8666 14.8075 7.36252 13.8923L4.72103 9.47749C4.55139 9.19303 4.59586 8.82897 4.82801 8.59573L8.24217 5.17279C8.47712 4.93748 8.83987 4.88895 9.12186 5.06508L13.5226 7.71128C14.4283 7.22464 15.3758 6.82565 16.3493 6.5338L17.5918 1.54389C17.6727 1.22304 17.9599 0.997192 18.2889 0.997192H23.1203C23.4491 0.997192 23.7388 1.22304 23.8172 1.54389L25.0545 6.51044C26.0255 6.81351 26.9756 7.21787 27.8838 7.70772L32.2898 5.0565C32.5665 4.89458 32.932 4.93748 33.167 5.16747L36.5811 8.59067C36.816 8.82391 36.8603 9.18682 36.6907 9.47304L34.0491 13.8923C34.5346 14.798 34.9288 15.7476 35.2211 16.7184L40.2014 17.9702C40.5224 18.0484 40.747 18.339 40.747 18.6694V23.5095C40.747 23.839 40.5224 24.1302 40.2014 24.2075L35.2211 25.4586C34.9288 26.439 34.5346 27.388 34.0517 28.2878L36.6959 32.7038C36.8655 32.9897 36.8212 33.3529 36.5864 33.5858L33.1721 37.0164C32.9373 37.2485 32.5744 37.2881 32.295 37.1254L27.8891 34.4732C26.9808 34.9702 26.0306 35.371 25.0571 35.6776L23.825 40.6406C23.7441 40.9603 23.457 41.1855 23.1255 41.1855L18.2939 41.1888V41.1888ZM13.5149 32.9219C13.6375 32.9219 13.7626 32.9533 13.8748 33.0184C14.9295 33.6282 16.0336 34.0961 17.1534 34.4084C17.4013 34.4786 17.5918 34.6807 17.657 34.9314L18.8578 39.7464L22.5643 39.7435L23.7625 34.9264C23.825 34.678 24.0155 34.4786 24.2635 34.4084C25.399 34.0887 26.5005 33.6202 27.542 33.0166C27.769 32.8828 28.0457 32.8873 28.2703 33.0199L32.551 35.6001L35.1741 32.9648L32.6032 28.6758C32.4673 28.4497 32.4673 28.1694 32.5953 27.9418C33.1878 26.9141 33.642 25.8165 33.95 24.6725C34.0179 24.4212 34.2163 24.2258 34.4693 24.1631L39.3086 22.9456V19.2321L34.4693 18.0164C34.2163 17.9548 34.0179 17.7586 33.95 17.5058C33.6445 16.3727 33.1878 15.2698 32.5953 14.2336C32.4673 14.0098 32.47 13.7304 32.6032 13.5036L35.1689 9.21375L32.5482 6.5862L28.2677 9.16166C28.0457 9.29691 27.769 9.30316 27.5395 9.1676C26.4952 8.56436 25.3937 8.09668 24.261 7.7761C24.013 7.70772 23.8224 7.50998 23.7597 7.2587L22.5591 2.43929H18.8527L17.6439 7.28712C17.5816 7.53902 17.3856 7.74028 17.1352 7.80747C15.9997 8.1171 14.9008 8.5747 13.8672 9.16905C13.6427 9.30316 13.3659 9.30017 13.1389 9.16166L8.86339 6.58796L6.24276 9.21938L8.80857 13.5036C8.94432 13.7304 8.94432 14.0098 8.81394 14.2359C8.21087 15.2891 7.74105 16.3967 7.42513 17.5292C7.35465 17.7811 7.15629 17.972 6.90569 18.035L2.10568 19.2377V22.953L6.93966 24.1681C7.19288 24.2309 7.3912 24.4271 7.45906 24.679C7.76698 25.8147 8.22136 26.9164 8.8191 27.9539C8.94948 28.1812 8.94694 28.4615 8.8111 28.6856L6.24538 32.9698L8.86855 35.6024L13.1441 33.0264C13.259 32.9568 13.3868 32.9219 13.5149 32.9219Z" fill="#FF3B4A"/>
                 <defs>
                 <linearGradient id="paint0_linear_0_141" x1="21.1627" y1="-18.6419" x2="-19.0262" y2="20.5241" gradientUnits="userSpaceOnUse">
-                <stop stop-color="white"/>
-                <stop offset="1" stop-color="white"/>
+                <sfirst-section sfirst-section-color="white"/>
+                <sfirst-section offset="1" sfirst-section-color="white"/>
                 </linearGradient>
                 </defs>
                 </svg>
@@ -78,8 +81,8 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6628 13.0666C34.7217 10.2529 33.3319 7.71028 31.5287 5.50804C29.7363 3.31948 27.5903 1.54644 25.1479 0.238436C24.8733 0.0925163 24.5442 0.144316 24.3185 0.376956L8.63062 16.3386L6.81914 18.182C6.72126 18.2691 6.63694 18.3854 6.58525 18.5266C6.57722 18.5473 6.56897 18.5751 6.56068 18.5997L2.34233 30.8096L0.541891 36.0262C0.438509 36.3213 0.498376 36.6525 0.688826 36.889C0.832785 37.0652 1.0342 37.1581 1.24077 37.1581C1.30885 37.1581 1.37957 37.1489 1.44761 37.125L6.27243 35.6008L17.6196 32.0137C17.6903 31.9921 17.7611 31.9568 17.8263 31.9107C17.8616 31.8831 17.897 31.853 17.9295 31.8228L19.7818 29.9376L35.4669 13.975C35.6926 13.7454 35.7689 13.3848 35.6628 13.0666ZM3.44118 32.273C3.47102 32.2949 3.50643 32.3079 3.53654 32.3254C3.85727 32.55 4.15653 32.7981 4.40398 33.1041C4.65147 33.4066 4.84735 33.7595 5.0187 34.1339C5.03784 34.1676 5.04582 34.2097 5.05942 34.2473L2.47834 35.0645L3.44118 32.273ZM17.0458 30.4585L6.53902 33.7799C6.50911 33.7077 6.45749 33.6535 6.42486 33.5828C6.18268 32.9958 5.89172 32.4435 5.51093 31.9767C5.12747 31.5111 4.65965 31.1411 4.15653 30.817C4.09395 30.7764 4.05586 30.7136 3.99328 30.6772L7.91527 19.3258L9.09019 18.1368L10.0394 19.2932L18.2151 29.2683L17.0458 30.4585ZM19.3221 28.1412L16.9477 25.2451L29.4182 12.5617C29.5786 12.3947 29.66 12.1695 29.66 11.9398C29.66 11.7426 29.5976 11.5399 29.4643 11.3803C29.1869 11.04 28.7109 11.0178 28.4062 11.3274L15.936 24.0117L15.4491 23.4144L13.5806 21.1302L26.0455 8.44732C26.2086 8.2792 26.2904 8.05512 26.2904 7.82484C26.2904 7.62768 26.2249 7.42552 26.0945 7.2648C25.8143 6.9262 25.3384 6.90516 25.0337 7.213L12.5661 19.8991L10.1971 17.0054L24.9495 1.9928C27.0301 3.18004 28.8714 4.737 30.4217 6.63788C31.9828 8.54024 33.2067 10.722 34.0771 13.1276L19.3221 28.1412Z" fill="#FF3B4A"/>
                 <defs>
                 <linearGradient id="paint0_linear_0_147" x1="17.2623" y1="-17.4628" x2="-18.019" y2="17.7973" gradientUnits="userSpaceOnUse">
-                <stop stop-color="white"/>
-                <stop offset="1" stop-color="white"/>
+                <sfirst-section sfirst-section-color="white"/>
+                <sfirst-section offset="1" sfirst-section-color="white"/>
                 </linearGradient>
                 </defs>
                 </svg>
@@ -93,8 +96,8 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.0813 10.4461C41.0813 10.4142 41.0549 10.3994 41.0496 10.368C41.0418 10.299 41.0549 10.2289 41.026 10.1629L36.9067 0.466028C36.7934 0.201392 36.5303 0.026468 36.2382 0.026468H5.83962C5.54738 0.026468 5.2843 0.201392 5.17096 0.466028L1.04899 10.1629C1.02004 10.2289 1.0332 10.299 1.02268 10.368C1.02004 10.3994 0.993728 10.4142 0.993728 10.4461C0.993728 10.4603 1.00961 10.4719 1.00961 10.4882C1.02004 10.6463 1.06479 10.7972 1.17281 10.9221L20.4927 32.7548C20.5084 32.774 20.5375 32.7661 20.5532 32.7856C20.6058 32.8318 20.648 32.8738 20.7112 32.9075C20.7243 32.9132 20.7269 32.936 20.7453 32.9416C20.8401 32.9816 20.9401 33.002 21.0349 33.002C21.1322 33.002 21.2323 32.9816 21.3271 32.9416C21.3454 32.936 21.3481 32.9132 21.3613 32.9046C21.4244 32.8738 21.4665 32.8318 21.5166 32.7856C21.535 32.7661 21.564 32.774 21.5798 32.7548L40.8997 10.9221C41.0076 10.7972 41.0549 10.6463 41.0655 10.4882C41.0655 10.4719 41.0813 10.4603 41.0813 10.4461ZM25.965 1.46946L29.5183 9.72508H12.5568L16.1128 1.46946H25.965ZM29.5078 11.1672L21.0349 30.4745L12.5671 11.1672H29.5078ZM10.9827 11.1672L18.5133 28.3382L3.32054 11.1672H10.9827ZM31.0924 11.1672H38.7518L23.559 28.3353L31.0924 11.1672ZM39.2651 9.72508H31.0949L27.5415 1.46946H35.7564L39.2651 9.72508ZM6.31865 1.46946H14.5388L10.9827 9.72508H2.80983L6.31865 1.46946Z" fill="#FF3B4A"/>
                 <defs>
                 <linearGradient id="paint0_linear_0_157" x1="17" y1="-15.7273" x2="-10.7819" y2="25.7741" gradientUnits="userSpaceOnUse">
-                <stop stop-color="white"/>
-                <stop offset="1" stop-color="white"/>
+                <sfirst-section sfirst-section-color="white"/>
+                <sfirst-section offset="1" sfirst-section-color="white"/>
                 </linearGradient>
                 </defs>
                 </svg>
@@ -107,8 +110,8 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7098 7.04363V17.4455C39.711 17.463 39.7189 17.4765 39.7267 17.4899C39.7351 17.5042 39.7434 17.5185 39.7434 17.5373C39.7434 17.5548 39.7353 17.5683 39.727 17.582C39.7191 17.5951 39.711 17.6084 39.7098 17.6258V27.9667C39.7098 28.3992 39.3888 28.747 38.9956 28.747H36.6124C36.2192 28.747 35.9009 28.3992 35.9009 27.9667C35.9009 27.5352 36.2192 27.1859 36.6124 27.1859H38.284V18.3161H31.8461C31.4528 18.3161 31.1345 17.9671 31.1345 17.5373V7.82209H25.4083V22.1412C25.4083 22.5704 25.09 22.9221 24.6967 22.9221C24.3033 22.9221 23.9825 22.5704 23.9825 22.1412V7.04363V2.55245H1.43154V27.1859H3.12908C3.52234 27.1859 3.84325 27.5352 3.84325 27.9667C3.84325 28.3992 3.52234 28.747 3.12908 28.747H0.719988C0.326562 28.747 0.0057373 28.3992 0.0057373 27.9667V1.77456C0.0057373 1.34421 0.326562 0.996094 0.719988 0.996094H24.6967C25.09 0.996094 25.4083 1.34421 25.4083 1.77456V6.26217H38.9956C39.3888 6.26217 39.7098 6.61325 39.7098 7.04363ZM32.5577 16.7558H38.284V7.82209H32.5577V16.7558ZM23.9488 27.9691C23.9488 24.6507 26.4173 21.9521 29.4525 21.9521C32.4826 21.9521 34.9486 24.6507 34.9486 27.9691C34.9486 31.2893 32.4826 33.9888 29.4525 33.9888C26.4173 33.9888 23.9488 31.2893 23.9488 27.9691ZM25.3745 27.9691C25.3745 30.4294 27.204 32.4292 29.4525 32.4292C31.696 32.4292 33.5228 30.4294 33.5228 27.9691C33.5228 25.5103 31.696 23.5114 29.4525 23.5114C27.204 23.5114 25.3745 25.5103 25.3745 27.9691ZM4.79534 27.9667C4.79534 24.648 7.26141 21.9482 10.2967 21.9482C13.3292 21.9482 15.7979 24.648 15.7979 27.9667C15.7979 31.2878 13.3292 33.9858 10.2967 33.9858C7.26141 33.9858 4.79534 31.2878 4.79534 27.9667ZM6.21869 27.9667C6.21869 30.4265 8.04801 32.4265 10.2967 32.4265C12.5426 32.4265 14.3722 30.4265 14.3722 27.9667C14.3722 25.5079 12.5426 23.5105 10.2967 23.5105C8.04801 23.5105 6.21869 25.5079 6.21869 27.9667ZM17.4616 27.1859H22.285C22.6782 27.1859 22.9965 27.5352 22.9965 27.9667C22.9965 28.3992 22.6782 28.747 22.285 28.747H17.4616C17.0683 28.747 16.7501 28.3992 16.7501 27.9667C16.7501 27.5352 17.0683 27.1859 17.4616 27.1859Z" fill="#FF3B4A"/>
                 <defs>
                 <linearGradient id="paint0_linear_0_174" x1="15.5553" y1="-11.9141" x2="-8.75052" y2="25.4927" gradientUnits="userSpaceOnUse">
-                <stop stop-color="white"/>
-                <stop offset="1" stop-color="white"/>
+                <sfirst-section sfirst-section-color="white"/>
+                <sfirst-section offset="1" sfirst-section-color="white"/>
                 </linearGradient>
                 </defs>
                 </svg>   
@@ -131,8 +134,8 @@
                 <a href="#" class="products__link">mock-up</a>
                 </div>
                 <div class="products__items gallery">
-                <a href="img/work/work-1.jpg" data-fancybox="products__item" data-caption="products-item__img" alt="work-1" class="products__item">
-                <img class="products-item__img"  src="img/work/work-1.jpg" ></a>
+                <a href="img/work/work-1.jpg" data-fancybox="products__item" data-caption="products-item__img" class="products__item">
+                <img class="products-item__img"  src="img/work/work-1.jpg" alt="work-1" ></a>
                 <a href="img/work/work-2.jpg" data-fancybox="products__item" data-caption="products-item__img" class="products__item">
                 <img class="products-item__img" src="img/work/work-2.jpg" alt="work-2"></a>
                 <a href="img/work/work-3.jpg" data-fancybox="products__item" data-caption="products-item__img"  class="products__item">
@@ -156,7 +159,7 @@
         <p class="text meet-our-team-text_margin ">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
         <div class="meet-our-team__line"></div></div>
             <div class="gallery-team">
-                <img class="employee-active__photo" src="img/employes/mark waugh.jpg" alt="red-rectangle-large">
+                <img class="employee-active__photo" src="img/employes/mark-waugh.jpg" alt="red-rectangle-large">
                 <div class="about-emploues-foto">
                 <div class="about-employee mark-waungh">
                     <h3 class="about-employee__title ">mark waugh</h3>
@@ -199,7 +202,7 @@
                 
 
                 <div class="employee">
-                        <img class="employee__photo mark-waungh__photo" src="img/employes/mark waugh.jpg" alt="red-rectangle">
+                        <img class="employee__photo mark-waungh__photo" src="img/employes/mark-waugh.jpg" alt="red-rectangle">
                         <p class="employee__name">mark waugh</p></div>
 
                 <div class="employee">
@@ -222,8 +225,8 @@
         <h2 class="heading subscription-form_heading ">Design tips, tricks, and freebies. Delivered weekly.</h2>
         <p class="text_subscription-form">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p></div>
         <div class="subscription-form__input-button">
-        <input class="subscription-form__input-field" type="email"  placeholder="Email Address..." required="">
-        <div class="button__subscription-form">subscribe</div></div>       
+        <input class="subscription-form__input-field" type="email"  placeholder="Email Address..."method="get" required=""></input>
+        <input type="submit" placeholder="subscribe" class="button__subscription-form"></input></div>       
     </section>
 
     <a id="contact" href="#"></a>
