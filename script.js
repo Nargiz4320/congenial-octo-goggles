@@ -70,7 +70,8 @@ const scrollupBtn = document.querySelector('.scroll-up');
     function goTop() {
     if (window.pageYOffset > 0) {
         window.scrollBy(0, -75);
-        setTimeout(goTop, 0);
+        setTimeout(goTop, 0);  
+
     }
 }
 
